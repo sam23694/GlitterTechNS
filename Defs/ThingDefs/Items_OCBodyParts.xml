@@ -2,7 +2,36 @@
 <ThingDefs>
 	<!-- artificial - bionics -->
 
-	<ThingDef ParentName="BodyPartArtificialBase">
+	<ThingDef Name="BodyPartBase_GT" Abstract="True">
+		<label>body part</label>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<tickerType>Never</tickerType>
+		<alwaysHaulable>true</alwaysHaulable>
+		<isBodyPartOrImplant>true</isBodyPartOrImplant>
+		<tradeTags>
+			<li>BodyPartOrImplant</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<pathCost>10</pathCost>
+	</ThingDef>
+
+	<ThingDef ParentName="BodyPartBase_GT" Name="BodyPartArtificialBase_GT" Abstract="True">
+		<thingCategories>
+			<li>BodyPartsArtificial</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef ParentName="BodyPartArtificialBase_GT">
 		<defName>OCExo</defName>
 		<label>Orion Exoskeleton</label>
 		<description>A standard issue Orion Corporation exoskeleton. Equiped by most Orion security forces, this all purpose exoskeleton gives them a cheap and capable edge against their competitors.</description>
