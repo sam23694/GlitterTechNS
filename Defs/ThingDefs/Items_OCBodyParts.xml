@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 	<!-- artificial - bionics -->
-
+	
 	<ThingDef Name="BodyPartBase_GT" Abstract="True">
 		<label>body part</label>
 		<thingClass>ThingWithComps</thingClass>
@@ -47,4 +47,4 @@
 		</techHediffsTags>
 	</ThingDef>
 
-</ThingDefs>
+</Defs>
