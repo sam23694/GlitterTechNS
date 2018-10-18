@@ -12,6 +12,9 @@
 		<selectable>true</selectable>
 		<altitudeLayer>Item</altitudeLayer>
 		<stackLimit>75</stackLimit>
+		<statBases>
+			<Mass>0.01</Mass>
+		</statBases>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
@@ -36,6 +39,12 @@
 		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
 		<statBases>
 			<MarketValue>32</MarketValue>
+			<Mass>0.15</Mass>
+			<StuffPower_Armor_Sharp>1.9</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>1</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1.35</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
 			<SharpDamageMultiplier>1.8</SharpDamageMultiplier>
 			<BluntDamageMultiplier>1.5</BluntDamageMultiplier>
 		</statBases>
@@ -43,13 +52,18 @@
 			<li>ResourcesRaw</li>
 		</thingCategories>
 		<deepCommonality>1</deepCommonality>
+		<deepCountPerPortion>5</deepCountPerPortion>
+		<deepLumpSizeRange>
+			<min>4</min>
+			<max>14</max>
+		</deepLumpSizeRange>
 		<stuffProps>
 			<categories>
 				<li>Metallic</li>
 			</categories>
 			<color>(255,255,255)</color>
 			<constructEffect>ConstructMetal</constructEffect>
-			<soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
 			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
 			<statFactors>
@@ -82,9 +96,15 @@
 		<soundDrop>Silver_Drop</soundDrop>
 		<useHitPoints>false</useHitPoints>
 		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
-		<tradeability>Never</tradeability>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>117</MarketValue>
+			<Mass>0.8</Mass>
+			<StuffPower_Armor_Sharp>2.5</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>2</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>3</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>4</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>2</StuffPower_Insulation_Heat>
 			<SharpDamageMultiplier>3</SharpDamageMultiplier>
 			<BluntDamageMultiplier>3.5</BluntDamageMultiplier>
 		</statBases>
@@ -97,7 +117,7 @@
 			</categories>
 			<color>(100,60,100)</color>
 			<constructEffect>ConstructMetal</constructEffect>
-			<soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
 			<statOffsets>
 				<Beauty>16</Beauty>
 			</statOffsets>
@@ -121,7 +141,7 @@
 	<ThingDef ParentName="ResourceBase_GT">
 		<defName>BetaPoly</defName>
 		<label>Beta Poly</label>
-		<description>The second iteration in artificially constructed, atomically assembled dense matter. This man made, and extremely rare material, this material is too expensive to be mass produced, and has only been used as material for indestructable space suits, unstoppable kinetic slugs and containment for miniture black holes.</description>
+		<description>The second iteration in artificially constructed, atomically assembled dense matter. This man made, and extremely rare material, is too expensive to be mass produced, and has only been used as material for indestructable space suits, unstoppable kinetic slugs and containment for miniture black holes.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/BPoly</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -131,9 +151,15 @@
 		<soundDrop>Silver_Drop</soundDrop>
 		<useHitPoints>false</useHitPoints>
 		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
-		<tradeability>Never</tradeability>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>235</MarketValue>
+			<Mass>1.2</Mass>
+			<StuffPower_Armor_Sharp>8</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>7</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>8.5</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat>
 			<SharpDamageMultiplier>8</SharpDamageMultiplier>
 			<BluntDamageMultiplier>8.5</BluntDamageMultiplier>
 		</statBases>
@@ -146,7 +172,7 @@
 			</categories>
 			<color>(100,60,60)</color>
 			<constructEffect>ConstructMetal</constructEffect>
-			<soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
 			<statOffsets>
 				<Beauty>20</Beauty>
 			</statOffsets>
@@ -178,6 +204,7 @@
 		<soundDrop>Metal_Drop</soundDrop>
 		<statBases>
 			<MarketValue>1200</MarketValue>
+			<Mass>0.6</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<thingCategories>
@@ -197,6 +224,7 @@
 		<soundDrop>Metal_Drop</soundDrop>
 		<statBases>
 			<MarketValue>1</MarketValue>
+			<Mass>0.2</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<thingCategories>
@@ -216,6 +244,7 @@
 		<soundDrop>Metal_Drop</soundDrop>
 		<statBases>
 			<MarketValue>350</MarketValue>
+			<Mass>0.6</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<thingCategories>
@@ -235,6 +264,7 @@
 		<soundDrop>Standard_Drop</soundDrop>
 		<statBases>
 			<MarketValue>250</MarketValue>
+			<Mass>0.6</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<thingCategories>
@@ -254,6 +284,7 @@
 		<soundDrop>Standard_Drop</soundDrop>
 		<statBases>
 			<MarketValue>250</MarketValue>
+			<Mass>0.1</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<thingCategories>
@@ -273,6 +304,7 @@
 		<soundDrop>Standard_Drop</soundDrop>
 		<statBases>
 			<MarketValue>250</MarketValue>
+			<Mass>0.6</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<thingCategories>

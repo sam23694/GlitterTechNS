@@ -10,14 +10,15 @@
 		<selectable>true</selectable>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>1</Mass>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<altitudeLayer>Item</altitudeLayer>
 		<tickerType>Never</tickerType>
 		<alwaysHaulable>true</alwaysHaulable>
-		<isBodyPartOrImplant>true</isBodyPartOrImplant>
+		<isTechHediff>true</isTechHediff>
 		<tradeTags>
-			<li>BodyPartOrImplant</li>
+			<li>TechHediff</li>
 		</tradeTags>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
@@ -36,7 +37,7 @@
 		<label>Orion Exoskeleton</label>
 		<description>A standard issue Orion Corporation exoskeleton. Equiped by most Orion security forces, this all purpose exoskeleton gives them a cheap and capable edge against their competitors.</description>
 		<graphicData>
-			<texPath>Things/Item/BodyPart/ArtificialOrgan</texPath>
+			<texPath>Things/Item/Health/HealthItemProsthetic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
